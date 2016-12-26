@@ -1,2 +1,2 @@
 # storageX
-global data storage center
+Global data storage center, inspired by Vue.js observer and Redis.
