@@ -15,7 +15,7 @@ const builds = {
     dest: path.resolve(__dirname, '../dist/storageX.common.js'),
     format: 'cjs',
     banner,
-    moduleName: 'storageX',
+    moduleName: 'Storage',
     plugins: [
       buble()
     ]
@@ -25,7 +25,7 @@ const builds = {
     dest: path.resolve(__dirname, '../dist/storageX.js'),
     format: 'umd',
     banner,
-    moduleName: 'storageX',
+    moduleName: 'Storage',
     plugins: [
       buble()
     ]

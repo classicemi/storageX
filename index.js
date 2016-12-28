@@ -1,5 +1,3 @@
-const storage = {
-  data: {}
-}
+import { Storage } from './src/storage'
 
-export default storage
+export default Storage
