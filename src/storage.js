@@ -24,6 +24,8 @@ export function defineReactive(obj, key, val) {
   const getter = property && property.getter
   const setter = property && property.setter
 
+  const $watchers = []
+
   Object.defineProperty(obj, key, {
     enumerable: true,
     configurable: true,
@@ -78,7 +80,7 @@ export class Storage {
   /**
    * returns the value associated with field in the hash stored at key
    * @param  {String} k key
-   * @return {any}      value 
+   * @return {any}      value
    */
   hget(k) {
     return this.$data[k]
